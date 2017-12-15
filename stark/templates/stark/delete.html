@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{#    <link rel="stylesheet" href="{% static "stark/bootstrap/css/bootstrap.css" %}" />#}
+
+</head>
+<body>
+<h1>确定要删除这个页面吗？</h1>
+    <form method="post">
+         {% csrf_token %}
+          <input type="submit" value="确定">
+    </form>
+
+
+{##}
+{#    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal#}
+{#    </button>#}
+{##}
+{#    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">#}
+{#        <div class="modal-dialog modal-sm" role="document">#}
+{#            <div class="modal-content">#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#</div>#}
+
+
+</body>
+</html>
